@@ -30,7 +30,7 @@
   
     // 箱を作成
     var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshPhongMaterial({ color: 0x3333ff });
+    var material = new THREE.MeshPhongMaterial({ color: 0x1290ff });
     var box = new THREE.Mesh(geometry, material);
     box.position.z = -5;
     scene.add(box);
@@ -52,7 +52,7 @@
   
       // 箱を回転させる
       box.rotation.x += 1.00;
-      box.rotation.y += 0.01;
+      box.rotation.y += 1.00;
   
       renderer.render(scene, camera);
     };
